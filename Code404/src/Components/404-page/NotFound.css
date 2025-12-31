@@ -1,0 +1,64 @@
+/* Page base */
+.page {
+  min-height: 100vh;
+  background: rgb(22, 22, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  user-select: none;
+}
+
+/* Container */
+.wrap {
+  max-width: 90%;
+  width: 420px;
+}
+
+/* Code block */
+.code {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+/* Typing effect */
+.highLight {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid white;
+  width: 0;
+  opacity: 0;
+  animation:
+    typing 1.2s steps(40, end) forwards,
+    blink 0.8s step-end infinite;
+}
+
+/* Animations */
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Syntax colors */
+.variable { color: #616161; }
+.variable2 { color: #607d8b; }
+.keyword { color: #6d4c41; }
+.constant { color: #9e9e9e; }
+.docComment { color: #0d47a1; }
+.operator { color: #ff8a65; }
+.comment { color: #33691e; }
+.string { color: #f39c12; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .code {
+    font-size: 10px;
+  }
+}

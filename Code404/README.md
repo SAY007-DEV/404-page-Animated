@@ -2,7 +2,7 @@
 
 A creative, developer-themed 404 Not Found page component for React applications. It features a terminal-style typing animation that humorously "debugs" the missing page using a simulated JavaScript code snippet.
 
-![404 Page Demo](screenshot.png)
+![404 Page Demo](public/screenshot.png)
 <!-- > *Note: To see the preview, please capture a screenshot of the application and save it as `screenshot.png` in this directory.* -->
 
 ## Features

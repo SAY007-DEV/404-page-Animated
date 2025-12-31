@@ -1,16 +1,53 @@
-# React + Vite
+# Code404 - Creative 404 Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A creative, developer-themed 404 Not Found page component for React applications. It features a terminal-style typing animation that humorously "debugs" the missing page using a simulated JavaScript code snippet.
 
-Currently, two official plugins are available:
+![404 Page Demo](screenshot.png)
+<!-- > *Note: To see the preview, please capture a screenshot of the application and save it as `screenshot.png` in this directory.* -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Typing Animation**: Simulates code being typed character-by-character in real-time.
+- **Developer Humor**: Displays a custom JavaScript function attempting to "find" the page and throwing a 404 error.
+- **Syntax Highlighting Style**: Mimics a code editor environment.
+- **Cursor Effect**: Includes a blinking cursor that follows the typing and disappears from previous lines.
+- **Responsive**: Adapts to the container size.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SAY007-DEV/404-page-Animated
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Navigate to the project directory:**
+   ```bash
+   cd Code404
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+### Running Locally
+To start the development server and view the animation:
+
+```bash
+npm run dev
+```
+
+### Integration
+To use the `NotFound` component in your own React project:
+
+1. Copy the `src/Components/404-page` directory into your project.
+2. Import and render the component where needed (usually in your router's catch-all route):
+
+
+## Technologies Used
+
+- **React**: For component structure and state management.
+- **CSS3**: For the typing animations and layout.
+- **Vite**: For fast development and building.
